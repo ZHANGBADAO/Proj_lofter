@@ -1,0 +1,118 @@
+@charset "utf-8";
+
+@mixin cf {
+  zoom: 1;
+  &:after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+}
+
+@mixin shadow {
+  box-shadow: #ccc 0 0.03rem 0.13rem;
+}
+
+body{
+
+}
+
+#title{
+  height:1.3rem;    margin-bottom: .01rem;
+  .search{
+    float: left;
+    width:1.4rem;
+    padding:.35rem 0 0 .45rem;
+    box-sizing: border-box;
+    img{
+      width:.63rem;
+
+    }
+  }
+  .nav{
+    .swiper-slide{
+      width:2rem;
+      font:.55rem "";
+      text-align: center;
+      line-height:1.3rem;
+      box-sizing: border-box;
+      &:nth-child(1){
+        border-bottom: .01rem solid #000;
+      }
+      &:nth-child(4){
+        width:2.5rem;
+      }
+    }
+  }
+
+}
+
+.container{
+  .swiper-slide{
+    &:nth-child(1){
+      .huoDong{
+        display: block;
+        img{
+          width:100%;
+
+        }
+      }
+      .zhiding{
+        display: block;
+        margin-top: .6rem;
+        img{
+          width: 100%;
+        }
+        h4{
+          font:.45rem/.45rem "";
+          color: #000;
+          padding:.5rem 0 .4rem 1.2rem;
+          background: url("../img/small/f04.png") no-repeat .45rem .15rem;
+          background-size: .46rem auto;
+        }
+        p{
+          width:9.92rem;
+          height:.9rem;
+          margin:0 auto;
+          border-bottom: .01rem solid #cccccc;
+          font:.4rem "";
+        }
+      }
+      .huoDong2{
+        display: block;
+        margin-top: .6rem;
+        img{
+          width: 100%;
+        }
+
+        p{
+          width:9.92rem;
+          height:.9rem;
+          margin:0 auto;
+          border-bottom: .01rem solid #cccccc;
+          font:.4rem "";
+          padding-top: .2rem;
+        }
+      }
+      .huoDong3{
+        display: block;
+        margin-top: .6rem;
+        img{
+          width: 100%;
+        }
+
+        p{
+          width:9.92rem;
+          height:.9rem;
+          margin:0 auto;
+          border-bottom: .01rem solid #cccccc;
+          font:.4rem "";
+          padding-top: .2rem;
+        }
+      }
+    }
+  }
+}
+
+
+

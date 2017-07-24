@@ -1,0 +1,257 @@
+@charset "utf-8";
+
+@mixin cf {
+  zoom: 1;
+  &:after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+}
+
+@mixin shadow {
+  box-shadow: #ccc 0 0.03rem 0.13rem;
+}
+
+body{
+  margin-bottom: 1.5rem;
+}
+header {
+  height: 1.24rem;
+  display: flex;
+  position: fixed;
+  z-index: 100;
+  top:0;
+  width: 100%;
+  background: #fff;
+  a {
+    &:nth-child(1) {
+      width: 3.62rem;
+      border-bottom: 2px solid #000000;
+      font: 0.5rem/1.24rem "";
+      text-align: center;
+      margin-left: 1.8rem;
+    }
+    &:nth-child(2) {
+      width: 3.62rem;
+      font: 0.5rem/1.24rem "";
+      text-align: center;
+    }
+    &:nth-child(3) {
+      width: .6rem;
+      height: .47rem;
+      margin-left: .7rem;
+      margin-top: .42rem;
+
+      img{
+        display: block;
+        width:100%;
+
+      }
+    }
+
+  }
+}
+
+#ad{
+  margin-top: 1.24rem;
+  height:3.6rem;
+  margin-bottom: .44rem;
+  background: #f3f5f4;
+  img{
+    display: block;
+    width:100%;
+  }
+}
+
+/*动态*/
+.dongTai{
+  margin-bottom: .45rem;
+  .title{
+    height:1.8rem;
+    dl{
+      @include cf;
+      dt{
+        float: left;
+        width:4.8rem;
+        position: relative;
+        img{
+          width:1.22rem;
+          position: absolute;
+          top:.3rem;
+          left:.45rem;
+        }
+        b{
+          font:.42rem/.42rem "";
+          position: absolute;
+          top:.68rem;
+          left:2.11rem;
+        }
+      }
+      dd{
+        float: right;
+        font:0.37rem/.37rem "";
+        margin:.73rem .48rem 0 0;
+      }
+    }
+  }
+  .zhuTu{
+    display: block;
+    width:100%;
+  }
+  .text{
+    padding:0 .43rem;
+    h4{
+      height:1.47rem;
+      overflow: hidden;
+      border-bottom: .02rem dotted #666666;
+      font:.42rem/1.47rem "";
+      text-indent: .72rem;
+      background: url("../img/small/i10.png") no-repeat left center;
+      background-size: .36rem auto;
+      b{margin-right: .25rem;}
+    }
+    .huDong{
+    .zan{
+      height:1.76rem;
+      dt{
+        float: left;
+        display: flex;
+        justify-content: space-between;
+        margin-top: .58rem;
+        width:6.26rem;
+        img{
+          width:.68rem;
+          height:.59rem;
+        }
+      }
+      dd{
+        float: right;    margin-top: 0.6rem;
+        img{
+          width:.64rem;
+        }
+      }
+    }
+      .reDu{
+        height:.66rem;
+        font:.37rem/.66rem "";
+        b{
+          margin-right: .36rem;
+        }
+      }
+      .pinLun{
+        height:.95rem;
+        font:.38rem/.95rem "";
+        b{
+          &:nth-child(1){
+            color:#007aff;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+/*可能感兴趣的人*/
+#tuiJian{
+  height:10.08rem;
+  background: #f3f5f4;
+  padding-left: .42rem;
+
+  >h4{
+    font:.38rem/1.38rem "";
+    height:1.38rem ;
+    color: #666666;
+  }
+  .swiper-container1{
+    height:8.19rem;
+    .swiper-slide{
+      margin-right: .41rem;
+      background: #fff;
+      width:7.93rem;
+      padding-top:.22rem;
+      .touXian{
+        display: block;
+        width: 1.54rem;
+        margin:0 auto;
+      }
+      h4{
+        font:.38rem/.38rem "";
+        text-align: center;
+        font-weight:600;
+        margin:.6rem 0 .3rem;
+      }
+      h5{
+        font:.33rem/.33rem "";
+        text-align: center;
+        color: #666 ;
+        margin:.3rem 0 .3rem;
+      }
+      .pic{
+        display: flex;
+        justify-content: space-between;
+        img{
+          width:2.65rem;
+          height:2.65rem;
+        }
+      }
+      p{
+        width:2.1rem;
+        height:.9rem;
+
+        border:0.02rem solid #fd3736;
+        border-radius: 0.45rem;
+        margin:.45rem auto 0;
+        text-align: center;
+        font:.38rem/.9rem "";
+        color:#fd3736;
+        //margin-top: .45rem;
+      }
+    }
+  }
+}
+
+footer{
+  height:1.5rem;
+  background: #fdfffe;
+  position: fixed;
+  width:100%;
+  bottom: 0;
+  z-index:50;
+  ul{
+    display: flex;
+    justify-content: space-around;
+    height:100%;
+    li{
+      position: relative;
+      width:.82rem;
+      &:nth-child(2){
+        width:.82rem;
+        img{
+          width:.82rem;}
+      }
+      &:nth-child(3){
+        width:.91rem;
+        img{
+          width:.91rem;}
+      }
+      a{
+        display: block;
+        padding-top: .23rem;
+        img{
+          display: block;
+          width:.6rem;
+          margin:0 auto;
+        }
+        p{
+          text-align: center;
+          font:.28rem "";
+          position: absolute;
+          width:100%;
+          bottom: 0.1rem;
+        }
+      }
+    }
+  }
+}
