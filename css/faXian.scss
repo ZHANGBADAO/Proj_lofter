@@ -14,11 +14,12 @@
 }
 
 body{
-
+  background: #f3f5f4;
 }
 
 #title{
-  height:1.3rem;    margin-bottom: .01rem;
+  height:1.3rem;    margin-bottom: .02rem;
+  background: #fff;
   .search{
     float: left;
     width:1.4rem;
@@ -37,7 +38,7 @@ body{
       line-height:1.3rem;
       box-sizing: border-box;
       &:nth-child(1){
-        border-bottom: .01rem solid #000;
+        //border-bottom: .01rem solid #000;
       }
       &:nth-child(4){
         width:2.5rem;
@@ -111,6 +112,139 @@ body{
         }
       }
     }
+
+    &:nth-child(2){
+      .s_slider1{
+        .swiper-pagination-bullet-active{
+          background: #fff;
+        }
+        height:4.28rem;
+        .swiper-slide{
+          img{
+            width:100%;
+          }
+        }
+      }
+      .s_slider2{
+        padding-top: .3rem;
+        height:2.8rem;
+        .swiper-slide{
+          width:2.4rem;
+          margin:0 .15rem;
+          img{
+            width:100%;
+          }
+        }
+      }
+      #daRen{
+        .main{
+          height:1.75rem;
+          background: #fff;
+          margin-bottom: .45rem;
+          h4{
+            float: left;
+            font:.45rem/1.75rem "";
+            text-indent: .4rem;
+            color: #666;
+          }
+          img{
+            float: right;
+            width: 2.88rem;
+            margin:.4rem .45rem 0 0;
+          }
+        }
+        /*动态*/
+        .dongTai{
+          margin-bottom: .45rem;
+          background: #fff;
+          .title{
+            height:1.8rem;
+            dl{
+              @include cf;
+              dt{
+                float: left;
+                width:4.8rem;
+                position: relative;
+                img{
+                  width:1.22rem;
+                  position: absolute;
+                  top:.3rem;
+                  left:.45rem;
+                }
+                b{
+                  font:.42rem/.42rem "";
+                  position: absolute;
+                  top:.68rem;
+                  left:2.11rem;
+                }
+              }
+              dd{
+                float: right;
+                font:0.37rem/.37rem "";
+                margin:.73rem .48rem 0 0;
+              }
+            }
+          }
+          .zhuTu{
+            display: block;
+            width:100%;
+          }
+          .text{
+            padding:0 .43rem;
+            h4{
+              height:1.47rem;
+              overflow: hidden;
+              border-bottom: .02rem dotted #666666;
+              font:.42rem/1.47rem "";
+              text-indent: .72rem;
+              background: url("../img/small/i10.png") no-repeat left center;
+              background-size: .36rem auto;
+              b{margin-right: .25rem;}
+            }
+            .huDong{
+              .zan{
+                height:1.76rem;
+                dt{
+                  float: left;
+                  display: flex;
+                  justify-content: space-between;
+                  margin-top: .58rem;
+                  width:6.26rem;
+                  img{
+                    width:.68rem;
+                    height:.59rem;
+                  }
+                }
+                dd{
+                  float: right;    margin-top: 0.6rem;
+                  img{
+                    width:.64rem;
+                  }
+                }
+              }
+              .reDu{
+                height:.66rem;
+                font:.37rem/.66rem "";
+                b{
+                  margin-right: .36rem;
+                }
+              }
+              .pinLun{
+                height:.95rem;
+                font:.38rem/.95rem "";
+                b{
+                  &:nth-child(1){
+                    color:#007aff;
+                  }
+                }
+              }
+            }
+          }
+
+        }
+      }
+    }
+
   }
 }
 
